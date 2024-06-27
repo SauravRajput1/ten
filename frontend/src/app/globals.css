@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #087BE0;
+  --primary-400: #E8F1FF;
+  --primary-100: #E8F1FF;
+  --white: #ffffff;
+  --black: #000000;
+  --black--200: #465A69;
+  --green: #4CAF50;
+  --grey: #DDDDDD;
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif !important;
+  overflow: hidden;
+}
+body *{
+  font-family: "Open Sans", sans-serif !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000; 
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.sideMenu li svg{
+  width: 28px;
+  height: 28px;
+}
+.keyTake svg{
+  width: 20px;
+}
+.deleteUser svg{
+  width: 18px;
+}
+.closeSidebar li{
+  padding:0px !important;
+}
+.searchHeader .MuiInputBase-root input{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  height: 24px;
+}
